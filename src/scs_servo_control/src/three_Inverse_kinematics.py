@@ -7,7 +7,7 @@ Use:Inverse kinematics algorithm for a three link manipulator(三连杆接机械
 import math
 
 
-def Arm():
+def Arm(x,y):
     
     pi = 3.14
 
@@ -19,8 +19,6 @@ def Arm():
 
     # Define the end-effector position and orientation
     # 定义末端关节的位置为x,y，单位为毫米，姿态为theta（即 L3与X轴的夹角,这里设置为0 ），单位为弧度。这math.radians函数将角度转换为弧度
-    x = int(input("x:"))
-    y = int(input("y:"))
     theta = math.radians(0)
 
     # Calculate the intermediate position
